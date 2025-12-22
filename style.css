@@ -326,6 +326,37 @@ h1, h2, h3 {
   font-size: 15px;
   color: #cbd5e1;
 }
+/* ================= COMPARISON TABLE ================= */
+.comparison-section {
+  padding: 100px 0;
+  background: #0f172a;
+}
+
+.comparison-table {
+  max-width: 900px;
+  margin: auto;
+  background: #020617;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.comparison-row.header {
+  background: #063d2b;
+  font-weight: 700;
+  color: #9ef01a;
+}
+
+.comparison-row div {
+  font-size: 15px;
+  color: #e5e7eb;
+}
 
 
 /* ================= LOCATION ================= */
