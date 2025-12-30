@@ -341,6 +341,79 @@
   </div>
 </section>
 
+<!-- ================= FAQ ================= -->
+<section class="faq-section">
+  <div class="container">
+
+    <h2 class="section-heading">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is pest control safe for children and pets?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes. We use government-approved and eco-friendly chemicals that are safe
+          for children and pets when used as per guidelines.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How long does the pest control treatment last?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Depending on the treatment, results typically last from 3 months to 1 year.
+          We also provide service warranty where applicable.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need to vacate my house during treatment?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          In most cases, vacating is not required. Our team will guide you clearly
+          before the treatment if any precautions are needed.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How much does pest control service cost?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Pricing depends on the type of pest, area size, and treatment required.
+          Please contact us for a free inspection and exact quotation.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do you provide service warranty?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          Yes, we provide service warranty for selected treatments as per terms and
+          conditions.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 <!-- ================= CONTACT ================= -->
@@ -409,6 +482,16 @@
     currentTestimonial = (currentTestimonial + 1) % testimonials.length;
     testimonials[currentTestimonial].classList.add("active");
   }, 4000); // changes every 4 seconds
+
+
+  document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle("active");
+    });
+  });
+</script>
+
 </script>
 
 

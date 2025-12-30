@@ -466,6 +466,61 @@ h1, h2, h3 {
 .review-form select {
   cursor: pointer;
 }
+/* ================= FAQ ================= */
+.faq-section {
+  padding: 100px 0;
+  background: #0f172a;
+}
+
+.faq-item {
+  max-width: 900px;
+  margin: 0 auto 16px;
+  background: #020617;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+  font-size: 22px;
+  color: #9ef01a;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question span {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 24px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 20px;
+}
+
+.faq-answer p {
+  color: #cbd5e1;
+  font-size: 15px;
+  line-height: 1.7;
+}
 
 
 /* ================= CONTACT ================= */
