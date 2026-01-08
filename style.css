@@ -650,3 +650,127 @@ h1, h2, h3 {
     padding-right: 20px;
   }
 }
+/* ================= PRODUCTS PAGE ================= */
+.products-page {
+  padding: 100px 0;
+  background: linear-gradient(145deg, #020617, #0f172a);
+}
+
+.products-page .section-heading {
+  margin-bottom: 60px;
+}
+
+/* Product Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* Product Card */
+.product-card {
+  background: linear-gradient(145deg, #020617, #063d2b);
+  padding: 36px 30px;
+  border-radius: 22px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(158,240,26,0.12), transparent);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;   /* 🔥 THIS LINE FIXES IT */
+}
+
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.product-btn {
+  position: relative;
+  z-index: 5;
+}
+
+/* Icon */
+.product-card i {
+  font-size: 48px;
+  color: #9ef01a;
+  margin-bottom: 20px;
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover i {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* Title */
+.product-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+/* Description */
+.product-card p {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* CTA inside card (optional future use) */
+.product-card .product-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #9ef01a;
+  color: #062c21;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.product-card .product-btn:hover {
+  background: #b7ff2a;
+  transform: translateY(-2px);
+}
+
+/* ================= PRODUCTS HERO TWEAK ================= */
+.products-page-hero {
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(6,61,43,0.95), rgba(15,23,42,0.95));
+  padding-top: 80px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .product-card {
+    padding: 28px 22px;
+  }
+
+  .product-card i {
+    font-size: 40px;
+  }
+
+  .product-card h3 {
+    font-size: 20px;
+  }
+}

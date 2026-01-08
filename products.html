@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Products & Treatments | Sangita Pest Control</title>
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-flex">
+
+
+            <div class="logo">
+                <img src="logo.png" alt="Sangita Pest Control Logo">
+                <span>Sangita Pest Control Services</span>
+            </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <nav class="main-nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact" class="cta">Request Callback</a>
+                <a href="tel:+919822217255" class="call-btn">📞 Call Now</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero-section" style="min-height: 50vh;">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Our Pest Control Products & Treatments</h1>
+                <p>Safe, effective and government-approved solutions for complete pest protection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products-section products-page">
+        <div class="container">
+
+            <h2 class="section-heading">Available Treatments</h2>
+
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <i class="fas fa-bug-slash"></i>
+                    <h3>Cockroach Control</h3>
+                    <p>Advanced gel and spray treatments for long-lasting cockroach elimination.</p>
+                    <a href="index.html#contact" class="product-btn">Book Now</a>
+                </div>
+
+
+                <div class="product-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Termite Control</h3>
+                    <p>Pre and post construction termite treatment to protect your property.</p>
+                    <a href="index.html#contact" class="product-btn">Book Now</a>
+                </div>
+
+                <div class="product-card">
+                    <i class="fas fa-mosquito"></i>
+                    <h3>Mosquito Control</h3>
+                    <p>Fogging and residual spray treatments to reduce mosquito breeding.</p>
+                    <a href="index.html#contact" class="product-btn">Book Now</a>
+                </div>
+
+                <div class="product-card">
+                    <i class="fas fa-spider"></i>
+                    <h3>General Pest Control</h3>
+                    <p>Complete protection from ants, spiders, flies and crawling insects.</p>
+                    <a href="index.html#contact" class="product-btn">Book Now</a>
+                </div>
+
+                <div class="product-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Eco-Friendly Treatment</h3>
+                    <p>Low-toxicity treatments safe for kids, pets and environment.</p>
+                    <a href="index.html#contact" class="product-btn">Book Now</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="contact-section">
+        <div class="container" style="text-align:center;">
+            <h2 class="section-heading">Need Help Choosing the Right Treatment?</h2>
+            <p style="color:#cbd5e1; margin-bottom:20px;">
+                Contact us for a free inspection and expert recommendation.
+            </p>
+            <a href="index.html#contact" class="btn-primary">Get Free Inspection</a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Sangita Pest Control Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
