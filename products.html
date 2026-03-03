@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Our Products & Treatments | Sangita Pest Control</title>
+    <title>Our Products & Treatments | Easy Pest Control</title>
 
     <link rel="icon" type="image/png" href="logo.png">
 
@@ -29,8 +29,8 @@
 
 
             <div class="logo">
-                <img src="logo.png" alt="Sangita Pest Control Logo">
-                <span>Sangita Pest Control Services</span>
+                <img src="logo.png" alt="Easy Pest Control Logo">
+                <span>Easy Pest Control Services</span>
             </div>
 
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -135,7 +135,7 @@
     <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <div class="container">
-            <p>© 2025 Sangita Pest Control Services. All Rights Reserved.</p>
+            <p>© 2026 Easy Pest Control Services. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -144,49 +144,6 @@
             document.getElementById("navMenu").classList.toggle("active");
         }
     </script>
-<!-- ================= MOBILE STICKY BAR ================= -->
-<div class="mobile-sticky-bar">
-  <a href="tel:+919822217255" class="sticky-call">
-    📞 Call Now
-  </a>
-
-  <a href="https://wa.me/919822217255?text=Hi%20I%20am%20interested%20in%20your%20pest%20control%20services"
-     target="_blank"
-     class="sticky-whatsapp">
-    💬 WhatsApp
-  </a>
-</div>
-<script>
-  let lastScrollTop = 0;
-  const stickyBar = document.querySelector('.mobile-sticky-bar');
-
-  window.addEventListener('scroll', function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      // scrolling down
-      stickyBar.classList.add('hide');
-    } else {
-      // scrolling up
-      stickyBar.classList.remove('hide');
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  });
-</script>
-<script>
-  const vibrateElements = document.querySelectorAll(
-    '.sticky-call, .sticky-whatsapp, .product-btn, .cta'
-  );
-
-  vibrateElements.forEach(el => {
-    el.addEventListener('click', () => {
-      if (navigator.vibrate) {
-        navigator.vibrate(50); // 50ms vibration
-      }
-    });
-  });
-</script>
 
 </body>
 
